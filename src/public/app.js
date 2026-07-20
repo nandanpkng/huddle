@@ -19,3 +19,8 @@ async function init() { const context = await fetch('/api/workspace').then((r) =
 $('#open-brief').onclick = () => document.querySelector('.brief-card').scrollIntoView({behavior:'smooth',block:'center'});
 $('#copy-brief').onclick = () => { navigator.clipboard?.writeText(`${brief.title}\n\n${brief.purpose}\n\n${brief.talkingPoints.map((x,i)=>`${i+1}. ${x}`).join('\n')}`); $('#copy-brief').textContent='Copied ✓'; };
 init().catch((error) => { $('#brief-purpose').textContent = `Could not generate brief: ${error.message}`; });
+
+document.title = 'Huddle - Meeting intelligence';
+document.querySelector('.brand').lastChild.textContent = ' Huddle';
+document.querySelector('.brand i').textContent = 'h';
+document.querySelector('.subtitle').textContent = 'Huddle connects the threads before a meeting and closes the loop after it.';
