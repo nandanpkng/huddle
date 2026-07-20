@@ -83,23 +83,35 @@ const brief = await openai.chat.completions.create({
 
 ## Try It / Run Locally
 
-### Supported Platforms
-macOS, Linux, Windows (Node.js 20+).
+### Prerequisites & Supported Platforms
+- **Supported Platforms:** macOS, Linux, Windows
+- **Runtime:** Node.js 20+
+- **Credentials:** None required! The application includes a self-contained, offline-testable demo mode with pre-loaded Calendar events, Slack discussions, Notion notes, and transcript logs.
 
 ### Quick Start
+
 ```bash
+# 1. Clone repository
+git clone https://github.com/nandanpkng/huddle.git
 cd huddle
-pnpm start
-# Open http://localhost:3001
+
+# 2. Start local server (zero npm dependencies required)
+pnpm start   # or npm start / node src/server.js
+
+# 3. Open in browser
+# http://localhost:3001
 ```
 
-### Run Tests
+### Self-Contained Judge Walkthrough
+1. Navigate to `http://localhost:3001` in your web browser.
+2. Inspect the **30-Minute Pre-Meeting Brief** generated from Slack threads, Notion docs, and attendee history.
+3. Click **Process demo transcript** to trigger transcript action extraction.
+4. Review extracted action items with inferred owners, due dates, verbatim source quotes, and draft Linear/Slack follow-up tickets.
+
+### Run Automated Tests
 ```bash
-pnpm test
+pnpm test   # or npm test / node --test
 ```
-
-### Judge-Testable Path
-Run `pnpm start` and open `http://localhost:3001`. Select **Process demo transcript** to exercise the complete meeting preparation and action extraction workflow with pre-loaded representative Calendar, Slack, and Notion data.
 
 ---
 
