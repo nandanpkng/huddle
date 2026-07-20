@@ -8,16 +8,7 @@ Track: Work & Productivity — OpenAI Build Week 2026
 
 ## Demo Video
 
-[![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
-
 - **Watch on YouTube:** [https://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
-- **Voiceover Outline (<=3 min):**
-  - `0:00 - 0:15` **Hook:** Huddle proactive meeting brief & action item agent.
-  - `0:15 - 0:45` **The Problem:** 20+ hours spent in meetings, unprepared arrivals & dropped action items.
-  - `0:45 - 1:45` **Live Demo:** Proactive 30-min pre-meeting brief, cross-tool context ranking, transcript grounding & follow-through task drafting.
-  - `1:45 - 2:25` **Codex Workflow:** Building Huddle with Codex step-by-step (`/feedback` Session ID).
-  - `2:25 - 2:45` **GPT-5.6 Integration:** Multi-source context synthesis & verbatim transcript action extraction.
-  - `2:45 - 3:00` **Conclusion & Value:** Saved 4+ hours/week per knowledge worker, zero dropped decisions.
 
 ---
 
@@ -53,9 +44,6 @@ Huddle was built 100% from scratch using OpenAI Codex as the primary software en
 4. `"Create an action-item parser that processes meeting transcripts, assigns owners/due dates, and retains exact source quotes."`
 5. `"Build a responsive dark-mode frontend workspace displaying meeting briefs, attendee context, and interactive action items."`
 6. `"Write unit tests validating brief generation, context ranking, and transcript action extraction."`
-
-**Primary Build Session ID:** `cs_buildweek2026_huddle_primary`
-*(Submit `/feedback Codex Session ID` from primary build thread in Devpost submission form)*
 
 ---
 
