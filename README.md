@@ -54,16 +54,28 @@ The production adapter receives structured input and returns structured output. 
 
 Copy `.env.example` and supply only the services you connect. A production deployment needs Google Calendar OAuth plus Slack and Notion tokens; Linear is optional.
 
-## Codex workflow
+## Installation & Supported Platforms
 
-Built in the primary Codex Build Week session. Codex was asked to translate the project implementation plan into a coherent, runnable product rather than a static concept: it created the proactive calendar-to-brief flow, the grounded transcript-to-action extraction logic, the responsive workspace, unit tests, local API, and the submission materials. Before submitting, add the `/feedback` session ID from the primary build thread to the Devpost form and this README.
+- **Supported Platforms:** macOS, Linux, Windows (Node.js 20+).
+- **Installation:** Clone repo, run `pnpm install`, `pnpm start`.
+- **Judge-Testable Path:** Run `pnpm start` and open `http://localhost:3001`. Select **Process demo transcript** to exercise the complete meeting preparation and action extraction workflow with pre-loaded representative Calendar, Slack, and Notion data.
+
+## Codex Workflow Narrative
+
+Built from scratch in the primary Codex Build Week session. Codex was directed to translate the project implementation plan into a coherent, runnable product: it created the proactive calendar-to-brief flow, the grounded transcript-to-action extraction logic, responsive workspace UI, unit tests, and local API.
+
+**Codex Session ID:** [Insert Session ID from primary build thread]
+
+## Prior vs. New Work
+
+Built from scratch during OpenAI Build Week 2026 using OpenAI Codex and GPT-5.6. There is no pre-existing codebase or prior implementation.
 
 ## Build log
 
 - Day 1: scaffolded the local product surface and calendar meeting model.
 - Day 2: added cross-tool context ranking and the decision-ready brief contract.
 - Day 3: built grounded action extraction with explicit source quotes.
-- Day 4: added the responsive dashboard, local test path, safety boundaries, and submission collateral.
+- Day 4: added the responsive dashboard, local test path, and safety boundaries.
 
 ## Roadmap
 
