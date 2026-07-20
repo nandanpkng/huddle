@@ -9,7 +9,7 @@ import { extractActions } from './services/action-engine.js';
 const port = Number(process.env.PORT || 3001);
 const publicDir = fileURLToPath(new URL('./public/', import.meta.url));
 const mime = { '.html': 'text/html', '.js': 'application/javascript', '.css': 'text/css', '.json': 'application/json' };
-function send(res, status, value, type = 'application/json') { res.writeHead(status, { 'content-type': `${type}; charset=utf-8`, 'cache-control': 'no-store' }); res.end(typeof value === 'string' ? value : JSON.stringify(value)); }
+function send(res, status, value, type = 'application/json') { res.writeHead(status, { 'content-type': `${type}; charset=utf-8`, 'cache-control': 'no-store' }); res.end(Buffer.isBuffer(value) || typeof value === 'string' ? value : JSON.stringify(value)); }
 async function readJson(req) { let raw = ''; for await (const part of req) raw += part; return raw ? JSON.parse(raw) : {}; }
 
 createServer(async (req, res) => {
