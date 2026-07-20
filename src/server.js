@@ -21,4 +21,4 @@ createServer(async (req, res) => {
     if (req.method === 'GET') { const file = normalize(join(publicDir, url.pathname === '/' ? 'index.html' : url.pathname)); if (!file.startsWith(publicDir)) return send(res, 403, 'Forbidden', 'text/plain'); return send(res, 200, await readFile(file), mime[extname(file)] || 'application/octet-stream'); }
     send(res, 404, { error: 'Not found' });
   } catch (error) { send(res, 500, { error: error.message || 'Unexpected server error' }); }
-}).listen(port, () => console.log(`PrepClaw listening at http://localhost:${port}`));
+}).listen(port, () => console.log(`Huddle listening at http://localhost:${port}`));
