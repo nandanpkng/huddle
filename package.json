@@ -1,0 +1,9 @@
+{
+  "name": "huddle",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A proactive meeting preparation and follow-through agent",
+  "type": "module",
+  "scripts": { "start": "node src/server.js", "dev": "node --watch src/server.js", "test": "node --test" },
+  "engines": { "node": ">=20" }
+}
